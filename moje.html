@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imiona</title>
+
+    <style>
+        body {
+            background-color: #e5f5f7;
+            font-family: Georgia, serif;
+            color: #34495e;
+            margin: 30px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .kontener {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr;
+            gap: 5px;
+            border: 2px solid #526777;
+            padding: 5px;
+            width: 50%;
+        }
+
+        .grupa {
+            border: 2px solid #526777;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-style: italic;
+            text-align: center;
+            border: 2px solid #526777;
+            margin: 0;
+            padding: 12px 4px;
+        }
+
+        .siatka {
+            display: grid;
+            gap: 5px;
+        }
+
+        .pole {
+            border: 2px solid #526777;
+            padding: 12px 5px;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .meskie .siatka {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .zenskie .siatka {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .wysokie {
+            min-height: 130px;
+        }
+
+        .duze {
+            font-size: 32px;
+        }
+
+        .srodek {
+            justify-content: center;
+        }
+
+        .podgrupa {
+            border: 2px solid #526777;
+            padding: 5px;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <h1>Imiona</h1>
+
+    <div class="kontener">
+
+        <!-- IMIONA MĘSKIE -->
+
+        <section class="grupa meskie">
+
+            <h2>Imiona męskie</h2>
+
+            <div class="siatka">
+
+                <div class="pole">Andrzej</div>
+                <div class="pole">Adam</div>
+
+                <div class="pole wysokie">Bartłomiej</div>
+                <div class="pole wysokie">Daniel</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PIERWSZA GRUPA IMION ŻEŃSKICH -->
+
+        <section class="grupa zenskie">
+
+            <h2>Imiona żeńskie</h2>
+
+            <div class="siatka">
+
+                <div class="pole duze">Anna</div>
+                <div class="pole duze">Anastazja</div>
+
+                <div class="podgrupa">
+
+                    <div class="pole">Ania</div>
+                    <div class="pole">Anka</div>
+
+                </div>
+
+                <div class="podgrupa">
+
+                    <div class="pole">Ola</div>
+                    <div class="pole">Olka</div>
+
+                </div>
+
+                <div class="pole">Krystyna</div>
+                <div class="pole">Grażyna</div>
+
+            </div>
+
+        </section>
+
+
+      
+    
+
+</body>
+</html>
